@@ -1,0 +1,282 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  background-color: rgba(30, 14, 43, 1);
+}
+
+.Divsecao1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 14%;
+  padding-left: 200px;
+  display: flex;
+  align-items: center;
+  gap: 700px;
+  border-bottom: 5px solid rgba(243, 19, 102, 1);
+  img {
+    width: 150px;
+    height: 80%;
+  }
+
+  ul {
+    display: flex;
+
+    gap: 50px;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: white;
+      list-style: none;
+      font-size: 24px;
+      font-weight: 600;
+
+      a {
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+      }
+
+      img {
+        width: 40px;
+      }
+    }
+  }
+}
+
+.conteudoSecao1 {
+  width: 90%;
+  height: 100%;
+  padding: 50px 0px 0px 0px;
+  display: flex;
+  gap: 150px;
+  .secao1Esq {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 30%;
+    height: 100%;
+    .imgPrincipal {
+      width: 569px;
+      height: 500px;
+
+      background-image: url(../asset/imagem-detalhes.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+
+      border-radius: 16px;
+      border: 3px solid rgba(192, 0, 255, 1);
+    }
+
+    .divImportantes {
+      height: 28%;
+      width: 112%;
+      background-color: rgba(44, 7, 51, 1);
+      padding: 20px 0px 0px 0px;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      div {
+        display: flex;
+        align-items: center;
+
+        color: white;
+        gap: 10px;
+      }
+
+      .topoImportantes {
+        padding-left: 35px;
+        font-weight: 400;
+        font-size: 32px;
+      }
+
+      .divInfos {
+        padding-left: 50px;
+        color: rgba(184, 179, 188, 1);
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.secao1Dir {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 100%;
+  gap: 50px;
+  h1 {
+    color: white;
+    font-size: 48px;
+    font-family: "Jacques Francois", serif;
+  }
+
+  .divInfosDir {
+    display: flex;
+    gap: 100px;
+    color: white;
+    justify-content: space-between;
+    .infoDir {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  .divClasifica {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+
+  .descricao {
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    h4 {
+      font-family: "Jacques Francois", serif;
+      font-weight: 400;
+      font-size: 36px;
+    }
+
+    p {
+      color: rgba(184, 179, 188, 1);
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+
+  .QtdIngresso {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+
+    color: white;
+
+    h3 {
+      font-family: "Jacques Francois", serif;
+      font-size: 32px;
+    }
+    .divMais,
+    .divMenos {
+      position: absolute;
+    }
+    .divMais {
+      bottom: 212px;
+      right: 740px;
+      button {
+        width: 26px;
+        height: 26px;
+        background: none;
+        background-image: url(../asset/+.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    .divMenos {
+      bottom: 220px;
+      right: 1095px;
+      button {
+        width: 26px;
+        height: 10px;
+        background: none;
+        background-image: url(../asset/-.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0px;
+      }
+    }
+
+    input {
+      padding-left: 50%;
+      height: 70px;
+      border: none;
+      border-radius: 18px;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: "Arimo", sans-serif;
+    }
+
+    .div1,
+    .div2 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .div1 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    .div2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: rgba(192, 0, 255, 1);
+      height: 70px;
+      border: none;
+      font-size: 24px;
+      border-radius: 16px;
+
+      font-family: "Arimo", sans-serif;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  padding-top: 100px;
+  .divLogoFinal {
+    width: 100%;
+    height: 100%;
+    border-top: 5px solid rgba(192, 0, 255, 1);
+
+    .divElementos {
+      padding: 0px 50px;
+      height: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      .divLinks {
+        align-items: center;
+        color: white;
+        display: flex;
+        gap: 60px;
+        font-size: 20px;
+      }
+    }
+  }
+}
