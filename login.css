@@ -1,0 +1,140 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px;
+}
+
+body {
+  font-family: "Jacques Francois", serif;
+}
+
+form {
+  display: flex;
+  width: 70%;
+}
+.divPagina {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(asset/6d645797265c2f039a6458ec63ef855aa28b09b8.jpg);
+  background-repeat: no-repeat;
+  background-size: 1920px 2300px;
+  background-position: center;
+}
+
+.divPagina::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.divLogin {
+  z-index: 1;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 70%;
+  height: 80%;
+
+  h1 {
+    color: white;
+    font-size: 42px;
+    font-weight: 400;
+  }
+
+  p {
+    width: 50%;
+
+    padding-bottom: 50px;
+
+    button {
+      color: white;
+      font-size: 20px;
+      background: none;
+      border: none;
+      font-family: "Jacques Francois", serif;
+      transition: .3s;
+    }
+    button:hover {
+      color: rgb(4, 211, 38);
+    }
+  }
+}
+
+.divInput {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 50%;
+  height: 12%;
+  label {
+    color: white;
+    font-size: 24px;
+  }
+
+  input {
+    color: black;
+    height: 100%;
+    border-radius: 16px;
+    border: none;
+    padding-left: 15px;
+    font-size: 18px;
+  }
+
+  input::placeholder {
+    color: black;
+    font-family: "Jacques Francois", serif;
+    font-size: 18px;
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+
+  input:valid {
+    border: 2px solid rgb(4, 247, 45);
+  }
+
+  input:focus{
+    outline: none;
+  }
+}
+
+.divButoes {
+  display: flex;
+  gap: 50px;
+  width: 50%;
+  height: 8%;
+
+  button {
+    font-family: "Jacques Francois", serif;
+    background-color: #c000ff;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    font-weight: 400;
+    font-size: 24px;
+
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background-color: #650286;
+  }
+}
+
+.inputsenha {
+  background-image: url(asset/olhinho.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 640px;
+}
