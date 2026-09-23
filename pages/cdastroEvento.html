@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulo 2 Cadastro de evento</title>
+
+    <link rel="stylesheet" href="../css/cadastroEvento.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Jockey+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="pagina">
+      <header>
+        <img src="../asset/Clip path group.png" alt="" />
+        <ul>
+          <li>Usuário</li>
+          <li>Perfil</li>
+          <li>Dashboard Adm</li>
+          <li>Usuario</li>
+        </ul>
+      </header>
+
+      <div class="divLogin">
+        <h1>Cadastro de eventos</h1>
+
+        <form action="">
+          <div class="divput">
+            <label for="">Nome:</label>
+            <input type="text" required />
+          </div>
+          <div class="divput">
+            <label for="">Data do Evento:</label>
+            <input type="date" required />
+          </div>
+          <div class="divput">
+            <label for="">Horario:</label>
+            <input type="time" required />
+          </div>
+          <div class="divput">
+            <label for="">Capacidade de pessoas:</label>
+            <input type="number" required />
+          </div>
+          <div class="divput">
+            <label for="">Imagem:</label>
+            <div class="divInputImg">
+              <button class="escolher">Escolher imagens</button>
+              <input
+                type="text"
+                class="inputIMG"
+                placeholder="Nehum arquivo escolhido"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="divput">
+            <label for="">Local do Evento:</label>
+            <input type="text" required />
+          </div>
+          <div class="divput">
+            <label for="">Preço:</label>
+            <input type="text" required />
+          </div>
+
+          <button class="sumitBT" type="submit">Continuar cadastro</button>
+        </form>
+      </div>
+
+      <footer>
+        <div class="divLogoFinal">
+          <p>© Senac</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

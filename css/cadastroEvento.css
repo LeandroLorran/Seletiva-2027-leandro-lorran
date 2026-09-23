@@ -1,0 +1,178 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px;
+}
+
+body {
+  font-family: "Jockey One", sans-serif;
+}
+
+.pagina {
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagina::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+header {
+  width: 80%;
+  height: 14%;
+  padding: 15px 0px 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid #7d02ca;
+  img {
+    width: 180px;
+    height: 90%;
+  }
+
+  ul {
+    display: flex;
+    gap: 50px;
+    li {
+      color: #f31399;
+      list-style: none;
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+}
+
+.divLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 80%;
+  height: 100%;
+  h1 {
+    color: rgba(212, 20, 91, 1);
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  form {
+    width: 40%;
+    height: 84%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+    .divput {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+      height: 12%;
+
+      label {
+        color: white;
+        font-size: 18px;
+      }
+      input {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        background-color: #0000007d;
+        border-radius: 6px;
+        border: 1px solid white;
+        height: 100%;
+        font-family: "Jockey One", sans-serif;
+        font-size: 18px;
+      }
+
+      input:invalid {
+        border: 1px solid red;
+      }
+
+      input:valid {
+        border: 1px solid rgb(0, 255, 76);
+      }
+
+      .divInputImg {
+        display: flex;
+
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+
+        .inputIMG {
+          width: 70%;
+          height: 100%;
+          border-radius: 0px 6px 6px 0px;
+          font-family: "Jockey One", sans-serif;
+        }
+
+        .inputIMG::placeholder {
+          color: white;
+          font-size: 18px;
+        }
+
+        .escolher {
+          font-family: "Jockey One", sans-serif;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #0000007d;
+          border-radius: 6px 0px 0px 6px;
+          height: 106%;
+          width: 30%;
+          border: 1px solid white;
+          color: white;
+          font-size: 18px;
+          transition: 0.3s;
+        }
+
+        .escolher:hover {
+          background-color: #510283;
+        }
+      }
+    }
+
+    .sumitBT {
+      margin-top: 10px;
+      background-color: #7d02ca;
+      width: 40%;
+      height: 8%;
+      border: none;
+      border-radius: 18px;
+      color: white;
+      font-size: 20px;
+      transition: 0.3s;
+      font-family: "Jockey One", sans-serif;
+    }
+
+    .sumitBT:hover {
+      background-color: #510283;
+    }
+  }
+}
+
+footer {
+  background-color: #8102ca;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+
+  p {
+    color: white;
+    font-size: 100px;
+  }
+}
